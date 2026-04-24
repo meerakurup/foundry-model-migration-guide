@@ -78,6 +78,36 @@ A Foundry-native, project-aware upgrade workflow that helps a developer choose a
 ### Why this staged approach is the right deliverable
 This bet is fundamentally about making model change feel like normal lifecycle management instead of a bespoke migration project. A crawl/walk/run sequence makes the ambition more credible: crawl proves the migration problem is real and solvable, walk scales that guidance across more upgrade paths through a real public repo, and run productizes the highest-value workflow inside Foundry. The repo remains the proving ground and reusable asset source even after the run-stage experience moves into product.
 
+### Additional Thoughts
+
+#### Suggested Guide Steps 
+1. Discovery
+    - Models deployed and which to retire (Elisa)
+    - Models API retiring models (Jin)
+    - Delta between Model A and B - consider what changes
+5. Deployment Strategy
+    - Quota checks for user 
+    - Do new deployment
+7. Code Changes (API / SDK migration)
+    - CAPI --> RAPI (Arun & Pamela)
+    - Prompt Optimization 
+10. Evaluation
+    - Use own or Foundry Eval testing
+    - Select eval scenario depending on app you are building (RAG, Tool calling, Translation, Classification)
+    - Golden (test) Dataset for your domain
+    - Performance and Cost Validation
+15. Production Roll-out
+    - Moving only some traffic to this model not all
+    - Monitoring success/failures with real data 
+17. Post-migration / New Models 
+
+#### Unified Resources used by repo
+
+Deployment inventory --> Scanner 
+Model lifecycle and retirement data. --> Models API
+Region and SKU availability data. --> Models API
+Evaluation dataset and evaluation results --> TODO
+Migration recommendation and rollout plan --> TODO (Reivew Above) 
 
 ### Resources
 
