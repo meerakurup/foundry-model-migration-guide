@@ -99,7 +99,15 @@ This bet is fundamentally about making model change feel like normal lifecycle m
 15. Production Roll-out
     - Moving only some traffic to this model not all
     - Monitoring success/failures with real data 
-17. Post-migration / New Models 
+17. Post-migration / New Models
+
+
+### Notes
+* Customer maturity level - need to encourage them to keep going through process, waiting for perfect golden dataset is not effective.
+* Goal = practice
+* Start ASAP -
+* Model migration + API migration - separate the two 
+* Typical embellishments 
 
 #### Unified Resources used by repo
 
