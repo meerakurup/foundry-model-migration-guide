@@ -107,7 +107,8 @@ This bet is fundamentally about making model change feel like normal lifecycle m
 * Goal = practice
 * Start ASAP -
 * Model migration + API migration - separate the two 
-* Typical embellishments 
+* Typical embellishments
+* Decision tree to ask questions and guide them - adoption framework - ex diff assets and repos
 
 #### Unified Resources used by repo
 
