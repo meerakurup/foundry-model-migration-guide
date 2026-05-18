@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/meerakurup/foundry-model-migration-guide/discussions
+    about: Ask a question, share a migration story, or discuss approach before filing an issue.
+  - name: Azure support (for production issues with Azure OpenAI / Foundry)
+    url: https://azure.microsoft.com/support/plans/
+    about: This repo is a sample / reference implementation. Production Azure issues go through Azure Support, not GitHub Issues.

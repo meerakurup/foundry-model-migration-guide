@@ -1,0 +1,55 @@
+name: Migration-pack request
+description: Request a scenario-specific migration pack (e.g., "GPT-4o → GPT-5.1" or "Chat Completions → Responses API")
+title: "[Migration pack] <source-model> → <target-model> on <api-surface>"
+labels: ["migration-pack"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request a new scenario-specific migration pack. These packs are opinionated, easy-to-execute bundles for a single common migration path (see IP5 in `docs/internal/existing-ips.md` for the original pattern).
+
+  - type: input
+    id: source-model
+    attributes:
+      label: Source model
+      placeholder: e.g., gpt-4o
+    validations:
+      required: true
+
+  - type: input
+    id: target-model
+    attributes:
+      label: Target model
+      placeholder: e.g., gpt-5.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: api-surface
+    attributes:
+      label: API surface change?
+      options:
+        - "No — same API (Chat Completions only)"
+        - "Yes — Chat Completions → Responses API"
+        - "Other (describe in 'additional context')"
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-justification
+    attributes:
+      label: Business justification
+      description: Why is this migration worth packaging? (cost, quality, retirement pressure, capability gaps)
+    validations:
+      required: true
+
+  - type: textarea
+    id: customers-affected
+    attributes:
+      label: Customer scenarios affected
+      description: Workload types, RAG vs non-RAG, tool calling, output schema constraints, etc.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
